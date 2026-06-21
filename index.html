@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🐸 FROGBIT Engine</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🐸 FROGBIT Engine</h1>
+    <p>Build Games With Frog Code</p>
+</header>
+
+<div id="container">
+
+    <aside id="dictionary">
+        <h2>📖 Frog Dictionary</h2>
+
+        <button class="insert" data-code="pond score = 0">
+            pond
+        </button>
+
+        <button class="insert" data-code="croak Jump()\n{\n\n}">
+            croak
+        </button>
+
+        <button class="insert" data-code="ribbit score">
+            ribbit
+        </button>
+
+        <button class="insert" data-code="splash Start\n{\n\n}">
+            splash
+        </button>
+
+        <button class="insert" data-code="pond alive = true">
+            boolean
+        </button>
+
+    </aside>
+
+    <main>
+
+        <div id="editorBox">
+
+            <h2>🐸 Frog Code</h2>
+
+<textarea id="editor">
+pond score = 0
+
+croak AddFly()
+{
+ score = score + 1
+}
+
+ribbit score
+</textarea>
+
+            <button id="runBtn">
+                🐸 LEAP!
+            </button>
+
+        </div>
+
+        <div id="previewBox">
+
+            <h2>🪰 Output Pond</h2>
+
+            <div id="output">
+Welcome to FROGBIT.
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="engine.js"></script>
+<script src="editor.js"></script>
+
+</body>
+</html>
